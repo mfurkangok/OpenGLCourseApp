@@ -4,7 +4,7 @@
 #include <stdio.h>
 using namespace std;
 
-// Window dimensions
+// GLWindow dimensions
 const GLint WIDTH = 800;
 const GLint HEIGHT = 600;
 
@@ -33,7 +33,7 @@ int main(void)
     // Allow forward compatibility
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
-    GLFWwindow *mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "Test Window", NULL, NULL);
+    GLFWwindow *mainWindow = glfwCreateWindow(WIDTH, HEIGHT, "Test GLWindow", NULL, NULL);
 
     if(!mainWindow)
     {

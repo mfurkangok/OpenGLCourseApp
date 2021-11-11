@@ -22,7 +22,11 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/usr/local/Cellar/glm/0.9.9.8/include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/gokf/Developer/cpp/OpenGLCourseApp/main.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/main.cpp.o"
+  "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/Camera.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Camera/Camera.cpp.o"
+  "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Mesh/Mesh.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Mesh/Mesh.cpp.o"
+  "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/Shader.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Shader/Shader.cpp.o"
+  "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Window/Window.cpp.o"
+  "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/main.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -32,3 +32,4 @@
 *.app
 
 .idea/vcs.xml
+cmake-build-debug

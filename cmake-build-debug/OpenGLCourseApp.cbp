@@ -90,10 +90,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/main.cpp">
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/Camera.cpp">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/Camera.h">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Mesh/Mesh.cpp">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Mesh/Mesh.h">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/Shader.cpp">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/Shader.h">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.cpp">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.h">
 			<Option target="OpenGLCourseApp"/>
 		</Unit>
 		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/glad.c">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/main.cpp">
 			<Option target="OpenGLCourseApp"/>
 		</Unit>
 		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/CMakeLists.txt">

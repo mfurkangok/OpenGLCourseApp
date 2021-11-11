@@ -19,7 +19,7 @@ link_directories(/usr/local/Cellar/glm/0.9.9.8/lib)
 
 # Execute compile command
 # This glad.c said in step 2 that it should be pulled into the project. Pay attention to the path
-set(SOURCE_FILES "src/glad.c" "main.cpp")
+set(SOURCE_FILES "src/glad.c" "src/main.cpp" src/Mesh/Mesh.cpp src/Mesh/Mesh.h src/Shader/Shader.cpp src/Shader/Shader.h src/Window/Window.cpp src/Window/Window.h src/Camera/Camera.cpp src/Camera/Camera.h)
 
 add_executable(OpenGLCourseApp ${SOURCE_FILES})
 

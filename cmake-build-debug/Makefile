@@ -129,29 +129,101 @@ OpenGLCourseApp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/build
 .PHONY : OpenGLCourseApp/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/Camera/Camera.o: src/Camera/Camera.cpp.o
+.PHONY : src/Camera/Camera.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/Camera/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Camera/Camera.cpp.o
+.PHONY : src/Camera/Camera.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/Camera/Camera.i: src/Camera/Camera.cpp.i
+.PHONY : src/Camera/Camera.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/Camera/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Camera/Camera.cpp.i
+.PHONY : src/Camera/Camera.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/Camera/Camera.s: src/Camera/Camera.cpp.s
+.PHONY : src/Camera/Camera.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/Camera/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Camera/Camera.cpp.s
+.PHONY : src/Camera/Camera.cpp.s
+
+src/Mesh/Mesh.o: src/Mesh/Mesh.cpp.o
+.PHONY : src/Mesh/Mesh.o
+
+# target to build an object file
+src/Mesh/Mesh.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Mesh/Mesh.cpp.o
+.PHONY : src/Mesh/Mesh.cpp.o
+
+src/Mesh/Mesh.i: src/Mesh/Mesh.cpp.i
+.PHONY : src/Mesh/Mesh.i
+
+# target to preprocess a source file
+src/Mesh/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Mesh/Mesh.cpp.i
+.PHONY : src/Mesh/Mesh.cpp.i
+
+src/Mesh/Mesh.s: src/Mesh/Mesh.cpp.s
+.PHONY : src/Mesh/Mesh.s
+
+# target to generate assembly for a file
+src/Mesh/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Mesh/Mesh.cpp.s
+.PHONY : src/Mesh/Mesh.cpp.s
+
+src/Shader/Shader.o: src/Shader/Shader.cpp.o
+.PHONY : src/Shader/Shader.o
+
+# target to build an object file
+src/Shader/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Shader/Shader.cpp.o
+.PHONY : src/Shader/Shader.cpp.o
+
+src/Shader/Shader.i: src/Shader/Shader.cpp.i
+.PHONY : src/Shader/Shader.i
+
+# target to preprocess a source file
+src/Shader/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Shader/Shader.cpp.i
+.PHONY : src/Shader/Shader.cpp.i
+
+src/Shader/Shader.s: src/Shader/Shader.cpp.s
+.PHONY : src/Shader/Shader.s
+
+# target to generate assembly for a file
+src/Shader/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Shader/Shader.cpp.s
+.PHONY : src/Shader/Shader.cpp.s
+
+src/Window/Window.o: src/Window/Window.cpp.o
+.PHONY : src/Window/Window.o
+
+# target to build an object file
+src/Window/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Window/Window.cpp.o
+.PHONY : src/Window/Window.cpp.o
+
+src/Window/Window.i: src/Window/Window.cpp.i
+.PHONY : src/Window/Window.i
+
+# target to preprocess a source file
+src/Window/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Window/Window.cpp.i
+.PHONY : src/Window/Window.cpp.i
+
+src/Window/Window.s: src/Window/Window.cpp.s
+.PHONY : src/Window/Window.s
+
+# target to generate assembly for a file
+src/Window/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Window/Window.cpp.s
+.PHONY : src/Window/Window.cpp.s
 
 src/glad.o: src/glad.c.o
 .PHONY : src/glad.o
@@ -177,6 +249,30 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +282,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... OpenGLCourseApp"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Camera/Camera.o"
+	@echo "... src/Camera/Camera.i"
+	@echo "... src/Camera/Camera.s"
+	@echo "... src/Mesh/Mesh.o"
+	@echo "... src/Mesh/Mesh.i"
+	@echo "... src/Mesh/Mesh.s"
+	@echo "... src/Shader/Shader.o"
+	@echo "... src/Shader/Shader.i"
+	@echo "... src/Shader/Shader.s"
+	@echo "... src/Window/Window.o"
+	@echo "... src/Window/Window.i"
+	@echo "... src/Window/Window.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
