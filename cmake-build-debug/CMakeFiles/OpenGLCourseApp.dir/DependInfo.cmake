@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/Camera.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Camera/Camera.cpp.o"
   "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Mesh/Mesh.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Mesh/Mesh.cpp.o"
   "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/Shader.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Shader/Shader.cpp.o"
+  "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Texture/Texture.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Texture/Texture.cpp.o"
   "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/Window/Window.cpp.o"
   "/Users/gokf/Developer/cpp/OpenGLCourseApp/src/main.cpp" "/Users/gokf/Developer/cpp/OpenGLCourseApp/cmake-build-debug/CMakeFiles/OpenGLCourseApp.dir/src/main.cpp.o"
   )

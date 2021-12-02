@@ -1,3 +1,7 @@
+#define STB_IMAGE_IMPLEMENTATION
+
+#include "libs/stb_image.h"
+
 #include <vector>
 
 #include <glew.h>
@@ -10,6 +14,8 @@
 #include "Mesh/Mesh.h"
 #include "Shader/Shader.h"
 #include "Window/Window.h"
+#include "Camera/Camera.h"
+#include "Texture/Texture.h"
 
 using namespace std;
 
@@ -19,6 +25,13 @@ using namespace std;
 Window mainWindow;
 vector<Mesh *> meshList;
 vector<Shader> shaderList;
+Camera camera;
+
+Texture brickTexture;
+Texture dirtTexture;
+
+GLfloat deltaTime = 0.0f;
+GLfloat lastTime = 0.0f;
 
 
 // Vertex Shader code
@@ -27,7 +40,8 @@ static const char *vShader = "./../Shaders/shader.vert";
 // Fragment Shader
 static const char *fShader = "./../Shaders/shader.frag";
 
-void CreateObjects() {
+void CreateObjects()
+{
     unsigned int indices[] = {
             0, 3, 1,
             1, 3, 2,
@@ -36,29 +50,32 @@ void CreateObjects() {
     };
 
     GLfloat vertices[] = {
-            -1.0f, -1.0f, 0.0f,
-            0.0f, -1.0f, 1.0f,
-            1.0f, -1.0f, 0.0f,
-            0.0f, 1.0f, 0.0f
+            // x, y, z,             u, v (u and v are texel positions)
+            -1.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+            0.0f, -1.0f, 1.0f, 0.5f, 0.0f,
+            1.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+            0.0f, 1.0f, 0.0f, 0.5, 1.0f,
     };
 
     Mesh *obj1 = new Mesh();
-    obj1->CreateMesh(vertices, indices, 12, 12);
+    obj1->CreateMesh(vertices, indices, 20, 12);
     meshList.push_back(obj1);
 
     Mesh *obj2 = new Mesh();
-    obj2->CreateMesh(vertices, indices, 12, 12);
+    obj2->CreateMesh(vertices, indices, 20, 12);
     meshList.push_back(obj2);
 }
 
 
-void CreateShaders() {
+void CreateShaders()
+{
     Shader *shader1 = new Shader();
     shader1->CreateFromFiles(vShader, fShader);
     shaderList.push_back(*shader1);
 }
 
-int main() {
+int main()
+{
     mainWindow = Window(800, 600);
     mainWindow.Initialise();
 
@@ -67,16 +84,33 @@ int main() {
     glBindVertexArray(meshList[1]->VAO);
     CreateShaders();
 
-    GLuint uniformProjection = 0, uniformModel = 0;
+    camera = Camera(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f), -90.0f, 0.0f, 1.0f, 0.03f);
+
+    brickTexture = Texture((char *) "../assets/brick.png");
+    brickTexture.LoadTexture();
+    dirtTexture = Texture((char *) "../assets/dirt.png");
+    dirtTexture.LoadTexture();
+
+    GLuint uniformProjection = 0, uniformModel = 0, uniformView = 0;
 
     glm::mat4 projection = glm::perspective(glm::radians(45.0f),
                                             mainWindow.getBufferWidth() / mainWindow.getBufferHeight(), 0.1f,
                                             100.0f);
 
     // Loop until window closed
-    while (!mainWindow.getShouldClose()) {
+    while (!mainWindow.getShouldClose())
+    {
+        GLfloat now = glfwGetTime();
+        deltaTime = now - lastTime;
+        lastTime = now;
+
         // Get + Handle user input events
         glfwPollEvents();
+
+
+        camera.keyControl(mainWindow.getKeys(), deltaTime);
+        camera.mouseControl(mainWindow.getXChange(), mainWindow.getYChange());
+
 
 
         // Clear window
@@ -86,6 +120,7 @@ int main() {
         shaderList[0].UseShader();
         uniformProjection = shaderList[0].GetProjectionLocation();
         uniformModel = shaderList[0].GetModelLocation();
+        uniformView = shaderList[0].GetViewLocation();
 
         glm::mat4 model(1.0f);
 
@@ -93,6 +128,8 @@ int main() {
         model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
         glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
+        glUniformMatrix4fv(uniformView, 1, GL_FALSE, glm::value_ptr(camera.calculateViewMatrix()));
+        brickTexture.UseTexture();
         meshList[0]->RenderMesh();
 
 
@@ -100,6 +137,7 @@ int main() {
         model = glm::translate(model, glm::vec3(0.0f, 1.0f, -4.0f));
         model = glm::scale(model, glm::vec3(0.4f, 0.4f, 1.0f));
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+        dirtTexture.UseTexture();
         meshList[1]->RenderMesh();
 
         glUseProgram(0);

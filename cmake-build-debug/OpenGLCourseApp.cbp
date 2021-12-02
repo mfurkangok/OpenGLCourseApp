@@ -108,6 +108,12 @@
 		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/Shader.h">
 			<Option target="OpenGLCourseApp"/>
 		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Texture/Texture.cpp">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Texture/Texture.h">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
 		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.cpp">
 			<Option target="OpenGLCourseApp"/>
 		</Unit>
@@ -115,6 +121,9 @@
 			<Option target="OpenGLCourseApp"/>
 		</Unit>
 		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/glad.c">
+			<Option target="OpenGLCourseApp"/>
+		</Unit>
+		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/libs/stb_image.h">
 			<Option target="OpenGLCourseApp"/>
 		</Unit>
 		<Unit filename="/Users/gokf/Developer/cpp/OpenGLCourseApp/src/main.cpp">

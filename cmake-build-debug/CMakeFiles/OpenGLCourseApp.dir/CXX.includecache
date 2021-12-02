@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/Camera.h
+glew.h
+-
+glfw3.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+stdio.h
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/stdio.h
+
 /Users/gokf/Developer/cpp/OpenGLCourseApp/src/Mesh/Mesh.h
 glew.h
 -
@@ -22,9 +34,9 @@ fstream
 glew.h
 /Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/glew.h
 
-/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.cpp
-Window.h
-/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.h
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Texture/Texture.h
+glew.h
+-
 
 /Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.h
 stdio.h
@@ -34,7 +46,41 @@ glew.h
 glfw3.h
 -
 
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/libs/stb_image.h
+stb_image.h
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/libs/stb_image.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
 /Users/gokf/Developer/cpp/OpenGLCourseApp/src/main.cpp
+libs/stb_image.h
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/libs/stb_image.h
 vector
 -
 glew.h
@@ -53,6 +99,10 @@ Shader/Shader.h
 /Users/gokf/Developer/cpp/OpenGLCourseApp/src/Shader/Shader.h
 Window/Window.h
 /Users/gokf/Developer/cpp/OpenGLCourseApp/src/Window/Window.h
+Camera/Camera.h
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Camera/Camera.h
+Texture/Texture.h
+/Users/gokf/Developer/cpp/OpenGLCourseApp/src/Texture/Texture.h
 
 /usr/local/Cellar/glew/2.2.0_1/include/GL/glew.h
 cstddef

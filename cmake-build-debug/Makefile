@@ -201,6 +201,30 @@ src/Shader/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Shader/Shader.cpp.s
 .PHONY : src/Shader/Shader.cpp.s
 
+src/Texture/Texture.o: src/Texture/Texture.cpp.o
+.PHONY : src/Texture/Texture.o
+
+# target to build an object file
+src/Texture/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Texture/Texture.cpp.o
+.PHONY : src/Texture/Texture.cpp.o
+
+src/Texture/Texture.i: src/Texture/Texture.cpp.i
+.PHONY : src/Texture/Texture.i
+
+# target to preprocess a source file
+src/Texture/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Texture/Texture.cpp.i
+.PHONY : src/Texture/Texture.cpp.i
+
+src/Texture/Texture.s: src/Texture/Texture.cpp.s
+.PHONY : src/Texture/Texture.s
+
+# target to generate assembly for a file
+src/Texture/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGLCourseApp.dir/build.make CMakeFiles/OpenGLCourseApp.dir/src/Texture/Texture.cpp.s
+.PHONY : src/Texture/Texture.cpp.s
+
 src/Window/Window.o: src/Window/Window.cpp.o
 .PHONY : src/Window/Window.o
 
@@ -291,6 +315,9 @@ help:
 	@echo "... src/Shader/Shader.o"
 	@echo "... src/Shader/Shader.i"
 	@echo "... src/Shader/Shader.s"
+	@echo "... src/Texture/Texture.o"
+	@echo "... src/Texture/Texture.i"
+	@echo "... src/Texture/Texture.s"
 	@echo "... src/Window/Window.o"
 	@echo "... src/Window/Window.i"
 	@echo "... src/Window/Window.s"
